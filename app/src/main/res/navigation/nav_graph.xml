@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/nav_graph"
+	app:startDestination="@id/expenseListFragment">
+
+	<fragment
+		android:id="@+id/expenseListFragment"
+		android:name="com.technipixl.eval4.views.ExpenseListFragment"
+		android:label="fragment_expense_list"
+		tools:layout="@layout/fragment_expense_list" >
+		<action
+			android:id="@+id/action_expenseListFragment_to_newExpenseFragment"
+			app:destination="@id/newExpenseFragment" />
+	</fragment>
+	<fragment
+		android:id="@+id/newExpenseFragment"
+		android:name="com.technipixl.eval4.views.NewExpenseFragment"
+		android:label="fragment_new_expense"
+		tools:layout="@layout/fragment_new_expense" />
+</navigation>
